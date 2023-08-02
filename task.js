@@ -3,8 +3,8 @@ import {client} from './connection.js';
 const app = express()
 const port = 8000;
 
-const students = await client.db("studentlist").collection("studentlist").find().toArray()
-const Mentors = await client.db("Mentorslist").collection("Mentorlist").find().toArray()
+ const students = await client.db("studentlist").collection("studentlist").find().toArray()
+    const Mentors = await client.db("Mentorslist").collection("Mentorlist").find().toArray()
     
 app.get("/Mentorslist", async (req, res) => {
     
